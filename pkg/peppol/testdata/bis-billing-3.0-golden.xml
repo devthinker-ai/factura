@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardBusinessDocument xmlns="urn:fdc:peppol.eu:2017:poacc:billing:3.0:sbd">
+  <StandardBusinessDocumentHeader>
+    <HeaderVersion>1.0</HeaderVersion>
+    <Sender><Identifier Authority="iso6523-actorid-upis">DE:SENDER</Identifier></Sender>
+    <Receiver><Identifier Authority="iso6523-actorid-upis">DE:RECEIVER</Identifier></Receiver>
+    <DocumentIdentification>
+      <Standard>urn:fdc:peppol.eu:2017:poacc:billing:3.0</Standard>
+      <TypeVersion>3.0</TypeVersion>
+      <InstanceIdentifier>golden-fixture-1</InstanceIdentifier>
+      <Type>Invoice</Type>
+      <CreationDateAndTime>2026-01-02T03:04:05Z</CreationDateAndTime>
+    </DocumentIdentification>
+    <BusinessScope>
+      <Scope><Type>PROCESSID</Type><InstanceIdentifier>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</InstanceIdentifier><Identifier>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Identifier></Scope>
+    </BusinessScope>
+  </StandardBusinessDocumentHeader>
+  <Payload mimeType="text/xml" contentType="application/xml" encoding="base64">PEludm9pY2UgeG1sbnM9J3Vybjp0ZXN0Jz5nb2xkZW48L0ludm9pY2U+</Payload>
+  <Control>
+    <Sender>DE:SENDER</Sender>
+    <Receiver>DE:RECEIVER</Receiver>
+    <CreationTime>2026-01-02T03:04:05Z</CreationTime>
+    <APMessageID>golden-fixture-1</APMessageID>
+  </Control>
+</StandardBusinessDocument>

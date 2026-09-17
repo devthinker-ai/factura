@@ -1,0 +1,48 @@
+{
+  "$schema": "https://gobl.org/draft-0/bill/invoice",
+  "$regime": "DE",
+  "$addons": ["de-xrechnung-v3", "de-zugferd-v2"],
+  "type": "standard",
+  "code": "R-2026-ZERO",
+  "issue_date": "2026-03-01",
+  "currency": "EUR",
+  "supplier": {
+    "name": "Provide One GmbH",
+    "tax_id": { "country": "DE", "code": "111111125" },
+    "addresses": [
+      {
+        "street": "Dietmar-Hopp-Allee",
+        "locality": "Walldorf",
+        "code": "69190",
+        "country": "DE"
+      }
+    ]
+  },
+  "customer": {
+    "name": "Sample Consumer",
+    "tax_id": { "country": "DE", "code": "282741168" },
+    "addresses": [
+      {
+        "street": "Werner-Heisenberg-Allee",
+        "locality": "München",
+        "code": "80939",
+        "country": "DE"
+      }
+    ]
+  },
+  "lines": [
+    {
+      "quantity": "1",
+      "item": { "name": "Exempt service", "price": "50.00" },
+      "taxes": [{ "cat": "VAT", "rate": "zero" }]
+    }
+  ],
+  "ordering": { "code": "NA" },
+  "payment": {
+    "instructions": {
+      "key": "credit-transfer+sepa",
+      "credit_transfer": [{ "iban": "DE89370400440532013000" }]
+    },
+    "terms": { "notes": "14 Tage netto" }
+  }
+}

@@ -1,0 +1,45 @@
+# Binaries / build
+/bin/
+/dist/
+/factura
+*.exe
+
+# Internal Cursor phase prompts (local only)
+/prompts/
+
+# Internal agent / planning docs (local only)
+/AGENTS.md
+/GTM.md
+/Spike.md
+
+# Local spike / module cache dumps
+.spike-tmp/
+
+# SQLite
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.db.backup
+factura.db
+factura.db-*
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Env / secrets
+.env
+*.pem
+*.key
+!*.key.example
+# Public license verification key is shipped in-tree (private key never is).
+!pkg/license/license_pub.pem
+
+# Temp artifacts
+*.pdf.tmp

@@ -1,0 +1,12 @@
+services:
+  factura:
+    image: ghcr.io/devthinker-ai/factura:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - factura-data:/data
+    environment:
+      FACTURA_DB: /data/factura.db
+
+volumes:
+  factura-data:

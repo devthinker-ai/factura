@@ -1,0 +1,2 @@
+This is not an e-invoice.
+Just plain text for parse_error coverage.
